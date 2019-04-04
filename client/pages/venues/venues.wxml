@@ -12,15 +12,17 @@
   <text class="v-mainbav-ml">羽毛球馆</text>
   <text class="v-mainbav-ml">乒乓球馆</text>
 </scroll-view>
-<view class='v-content-ml'>
-  <image src='../../images/fitness.jpg'></image>
-  <text>盘城文体活动中心</text>
-  <view></view>
-  <text>地点 : 南京市 浦口区 盘城街道 盘城新街68号</text>
-</view>
-<view class='v-content-ml'>
-  <image src='../../images/fitness1.jpg'></image>
-  <text>顶山街道文体中心排练厅</text>
-  <view></view>
-  <text>地点 : 南京市 浦口区 顶山街道 吉庆路10号</text>
+<view style='margin-top:94rpx;'>
+  <view class='v-content-ml' bindtap='details'>
+    <image src='../../images/fitness.jpg'></image>
+    <text>盘城文体活动中心</text>
+    <view></view>
+    <text>地点 : 南京市 浦口区 盘城街道 盘城新街68号</text>
+  </view>
+  <view class='v-content-ml'>
+    <image src='../../images/fitness1.jpg'></image>
+    <text>顶山街道文体中心排练厅</text>
+    <view></view>
+    <text>地点 : 南京市 浦口区 顶山街道 吉庆路10号</text>
+  </view>
 </view>

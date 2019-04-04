@@ -14,6 +14,11 @@ Page({
   onLoad: function (options) {
 
   },
+  details:function(){
+    wx:wx.navigateTo({
+      url: '../v-details/v-details'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -10,6 +10,9 @@ page{
   white-space: nowrap;
   background: #fff;
   margin-bottom: 20rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .v-mainbav-ml{
   line-height: 74rpx;
@@ -23,7 +26,8 @@ page{
 }
 .v-content-ml image{
   display: block;
-  width: 100%;
+  width: 750rpx;
+  height: 505rpx;
 }
 .v-content-ml text:nth-child(2){
   font-size: 32rpx;
