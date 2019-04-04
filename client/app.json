@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/top/top",
     "pages/venues/venues",
     "pages/index/index"
 
