@@ -1,24 +1,18 @@
-// pages/launch/launch.js
-var guan = null;
-
+// pages/v-details/v-details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    guan = setTimeout(function () {
-      wx.switchTab({
-        url: '../index/index'
-      })
-    }, 5000)
+
   },
 
   /**
@@ -32,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
   },
 
   /**
@@ -68,11 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  toIndex: function () {
-    wx.switchTab({
-      url: '../index/index'
-    })
-    clearTimeout(guan)
   }
 })

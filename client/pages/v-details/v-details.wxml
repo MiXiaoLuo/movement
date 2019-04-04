@@ -1,0 +1,26 @@
+<!--pages/v-details/v-details.wxml-->
+<view class='d-images-ml'>
+  <image src='../../images/fitness.jpg'></image>
+  <view class='d-img-text-ml'>
+    <text>盘城文体活动中心</text>
+    <image src='../../images/v-d-heart.png'></image>
+  </view>
+</view>
+<view class='d-nav-ml'>
+  <text class='d-show-ml'>场馆详情</text>
+  <text>场馆评价</text>
+</view>
+<view class='d-details-ml'>
+  <view class='d-details-in-ml'>
+    <view>盘城文体活动中心</view>
+    <text>咨 询 : 025-58467511</text>
+    <text>备 注 : 周一 09:00-16:30,各俱乐部开发模式...</text>
+    <text>地 址 : 南京市 浦口区盘城街道 盘城新街68号</text>
+    <text>参与方式 : 免费</text>
+  </view>
+  <view class='d-details-con-ml'>
+    <view>场馆详情</view>
+    <text>建筑面积1600平方米，是全街道文艺创作、培训和辅导中心。拥有图书阅览、运动健身、电子阅览、舞蹈培训、棋牌、摄影书画等功能厅和室，是本街道文体活动的主要阵地。
+    </text>
+  </view>
+</view>
