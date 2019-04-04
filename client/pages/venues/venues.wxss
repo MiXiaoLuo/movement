@@ -1,1 +1,48 @@
 /* pages/venues/venues.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+}
+.v-nav-ml{
+  width: 100%;
+  height: 74rpx;
+  white-space: nowrap;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.v-mainbav-ml{
+  line-height: 74rpx;
+  font-size: 28rpx;
+  margin: 0 50rpx 0 50rpx;
+  color: #000;
+}
+.v-content-ml{
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.v-content-ml image{
+  display: block;
+  width: 100%;
+}
+.v-content-ml text:nth-child(2){
+  font-size: 32rpx;
+  color: #000;
+  width: auto;
+  height: 92rpx;
+  line-height: 92rpx;
+  padding-left: 24rpx;
+}
+.v-content-ml view:nth-child(3){
+  width: 100%;
+  height: 2rpx;
+  background: #dfe1df;
+}
+.v-content-ml text:nth-child(4){
+  font-size: 26rpx;
+  color: #aaa;
+  width: 100%;
+  height: auto;
+  line-height: 74rpx;
+  padding-left: 24rpx;
+}

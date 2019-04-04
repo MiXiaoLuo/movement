@@ -13,16 +13,12 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.4",
-	"appid": "wxa772eb2cf5d5e89f",
-	"projectname": "wenhuayun",
+	"appid": "wxbc23fff08b095dd4",
+	"projectname": "movement",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
-	"client": "client/",
-	"svr": "server/",
-	"miniprogramRoot": "client/",
-	"qcloudRoot": "server/",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -40,5 +36,9 @@
 			"current": -1,
 			"list": []
 		}
-	}
+	},
+	"client": "./client",
+	"svr": "./server",
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server"
 }

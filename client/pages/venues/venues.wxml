@@ -1,2 +1,26 @@
 <!--pages/venues/venues.wxml-->
-<text>pages/venues/venues.wxml</text>
+<scroll-view
+ class="v-nav-ml"
+  scroll-x
+ scroll-with-animation='true'
+ >
+  <text class="v-mainbav-ml">全部</text>
+  <text class="v-mainbav-ml">图书馆</text>
+  <text class="v-mainbav-ml">文化馆</text>
+  <text class="v-mainbav-ml">美术馆</text>
+  <text class="v-mainbav-ml">台球馆</text>
+  <text class="v-mainbav-ml">羽毛球馆</text>
+  <text class="v-mainbav-ml">乒乓球馆</text>
+</scroll-view>
+<view class='v-content-ml'>
+  <image src='../../images/fitness.jpg'></image>
+  <text>盘城文体活动中心</text>
+  <view></view>
+  <text>地点 : 南京市 浦口区 盘城街道 盘城新街68号</text>
+</view>
+<view class='v-content-ml'>
+  <image src='../../images/fitness1.jpg'></image>
+  <text>顶山街道文体中心排练厅</text>
+  <view></view>
+  <text>地点 : 南京市 浦口区 顶山街道 吉庆路10号</text>
+</view>

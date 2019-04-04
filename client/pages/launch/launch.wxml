@@ -1,6 +1,0 @@
-<!--pages/launch/launch.wxml-->
-<view id='btn'>跳过</view>
-<scroll-view
-  scroll-y
-><image src='../../images/preview.jpg'></image>
-</scroll-view>
