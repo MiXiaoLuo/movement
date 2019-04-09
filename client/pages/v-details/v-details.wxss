@@ -208,6 +208,7 @@ page{
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 0;
 }
 .d-to-comments-ml image{
   width: 38rpx;
@@ -215,6 +216,44 @@ page{
   position: absolute;
   top: 28rpx;
   left: 268rpx;
+}
+.d-review-ml{
+  width: 750rpx;
+  height: 100%;
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  background: #f0f0f0;
+}
+.d-textarea-ml{
+  width: 652rpx;
+  height: 332rpx;
+  background: #fff;
+  margin: 40rpx 28rpx;
+  padding: 20rpx 20rpx;
+  border-radius: 10rpx;
+}
+.d-addInages-ml{
+  width: 140rpx;
+  height: 140rpx;
+  background: #fff;
+  border: 2rpx #b2c2cc solid;
+  border-radius: 10rpx;
+  margin-left: 28rpx;
+  float: left;
+}
+.d-addInages-ml image{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  margin: 20rpx;
+}
+.d-showInages-ml{
+  width: 142rpx;
+  height: 142rpx;
+  display: block;
+  margin-left: 28rpx;
+  float: left;
 }
 /*end 场馆评价*/
 /* begin 预定日历 */
@@ -243,7 +282,6 @@ page{
   border-bottom-right-radius: 20rpx;
   border-bottom-left-radius: 20rpx;
   padding: 0 0 20rpx;
-  font-family: FZZhunYuan-M02S;
   }
 .header{
   font-size: 0;
@@ -285,11 +323,16 @@ page{
   text-align: center;
   vertical-align: middle;
   }
-.date-head,.date-head-ml{
+.date-head{
   height: 60rpx;
   line-height: 60rpx;
   font-size: 12pt;
   }
+.date-head-ml{
+height: 60rpx;
+line-height: 60rpx;
+font-size: 12pt;
+}
 .nowDay .date-head{
   width: 60rpx;
   border-radius: 50%;
@@ -303,7 +346,7 @@ page{
   border-radius: 50%;
   text-align: center;
   color: #fff;
-  background-color: #ff9933a6;
+  background-color: #f1b971;
   margin: 0 auto;
   }
 .d-rili-down-ml{

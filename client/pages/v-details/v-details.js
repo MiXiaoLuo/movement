@@ -18,12 +18,28 @@ Page({
     isToday: 0,
     isTodayWeek: false,
     todayIndex: 0,
-    shi:0
+    shi:0,
+    tempFilePaths:''
   },
   evaluation:function(e){
     this.setData({
       _num: e.target.dataset.num
     })
+  },
+  images:function(){
+    var ti = this;
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success(res) {
+        ti.setData({
+          tempFilePaths:res.tempFilePaths
+        })
+        console.log(res);
+      }
+    })
+    console.log(this.data.showImages)
   },
 
   /**
@@ -174,44 +190,55 @@ Page({
     this.setData({
       shi: e.currentTarget.dataset.datenum
     })
-    console.log(this.data.shi)
   },
 
   animationData: function () {
-    var animation = wx.createAnimation({
-      duration: 2000,
-      timingFunction: 'ease'
-    });
-    this.animation = animation;
-    this.setData({
-      anima: true
-    });
-    var ti = this;
-    setTimeout(function () {
-      animation.translateY(-100 + '%').step()
-      ti.setData({
-        animationData: animation.export()
-      })
-    }, 200);
+    Up(this);
   },
   riliDown:function(){
-    var that = this;
-    var animation = wx.createAnimation({
-      duration: 1000,
-      timingFunction: 'linear'
-    })
-    setTimeout(function () {
-      animation.translateY(0).step()
-      that.setData({
-        animationData: animation.export()
-      })
-    }, 200)
-    // that.setData({
-    //   anima: false
-    // })
-    
+    Down(this);
+  },
+  evaUp:function(){
+    Up(this);
   }
 
 
-
 })
+
+function Up(tmd){
+  var animation = wx.createAnimation({
+    duration: 2000,
+    timingFunction: 'ease'
+  });
+  tmd.animation = animation;
+  tmd.setData({
+    anima: true
+  });
+  var ti = tmd;
+  setTimeout(function () {
+    animation.translateY(-100 + '%').step()
+    ti.setData({
+      animationData: animation.export()
+    })
+  }, 200);
+}
+
+function Down(tmd){
+  var that = tmd;
+  var animation = wx.createAnimation({
+    duration: 1000,
+    timingFunction: 'linear'
+  })
+  tmd.animation = animation;
+  setTimeout(function () {
+    animation.translateY(0).step()
+    that.setData({
+      animationData: animation.export()
+    })
+  }, 10)
+  setTimeout(function () {
+    that.setData({
+      anima: false
+    })
+  }, 1000)
+}
