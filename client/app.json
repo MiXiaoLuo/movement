@@ -1,19 +1,30 @@
 {
   "pages":[
+    "pages/launch/launch",
+    "pages/venues/venues",
+    "pages/v-details/v-details",
     "pages/activity/activity",
     "pages/a-details/a-details",
+    "pages/m-activities/m-activities",
+    "pages/m-venues/m-venues",
+    "pages/m-collection/m-collection",
+    "pages/m-news/m-news",
+    "pages/m-settings/m-settings",
+    "pages/m-feedback/m-feedback",
+    "pages/m-login/m-login",
+    "pages/my/my",
     "pages/index/index"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#0391d7",
-    "navigationBarTitleText": "",
-    "navigationBarTextStyle": "white",
-    "navigationStyle": "custom"
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#8c8c8c",
-    "selectedColor": "#0391d7",
+    "selectedColor": "0391d7",
     "backgroundColor": "#fff",
     "borderStyle": "black",
     "position": "bottom",
@@ -29,6 +40,18 @@
         "text": "活动预定",
         "iconPath": "images/activity.png",
         "selectedIconPath": "images/activity1.png"
+      },
+      {
+        "pagePath": "pages/venues/venues",
+        "text": "场馆预定",
+        "iconPath": "images/venues.png",
+        "selectedIconPath": "images/venues1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my1.png"
       }
     ]
   }

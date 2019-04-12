@@ -1,0 +1,8 @@
+<!--pages/my/my.wxml-->
+<view class='m-user-ml'>
+  <image src='../../images/m-portrait.jpg'></image>
+  <text bindtap='login'>登录 / 注册</text>
+</view>
+<view wx:for='{{nav}}' wx:key="index">
+  <view class='m-nav-ml' data-index='{{index}}' bindtap='nav'>{{item}}</view>
+</view>

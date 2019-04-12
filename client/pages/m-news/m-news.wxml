@@ -1,0 +1,5 @@
+<!--pages/m-news/m-news.wxml-->
+<view class='content-ml'>
+  <text>浦口区文化馆戏曲展览会预订成功</text>
+  <text>恭喜您！您预订的浦口区文化馆戏曲展览会5排12、5排13、5排14预订 成功！</text>
+</view>
