@@ -1,21 +1,127 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+page {
+  background: #f2f2f2;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.section {
+  height: 40vh;
+  padding-top: 10rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.section image{
+  display: block;
+  width: 100%;
+  height: 40vh;
 }
 
-.usermotto {
-  margin-top: 200px;
+.line {
+  height: 100rpx;
+  color: #0391d7;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.line text {
+  width: 100rpx;
+  margin: 0 30rpx;
+}
+
+.details {
+  position: relative;
+  height: 240rpx;
+  padding: 30rpx;
+  border-bottom: 1px solid #e6eaec;
+  background: #fff;
+}
+
+.details image {
+  display: block;
+  float: left;
+  width: 300rpx;
+  height: 240rpx;
+}
+
+.details view {
+  float: left;
+  width: 380rpx;
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  color: #8b969a;
+}
+
+.details view:nth-child(2) {
+  position: absolute;
+  top: 52rpx;
+  left: 20rpx;
+  width: 120rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 22rpx;
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  background: #f68e43;
+  color: white;
+}
+
+.details view:nth-child(3) {
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size: 34rpx;
+  margin-bottom: 30rpx;
+  color: #6b6b6b;
+  font-weight: bold;
+}
+
+.details view text {
+  font-size: 28rpx;
+}
+
+.details view:nth-child(5) {
+  margin: 10rpx;
+  margin-right: 0;
+}
+
+.details view:nth-child(5) text {
+  display: block;
+  float: right;
+  width: 290rpx;
+  line-height: 38rpx; 
+}
+
+.details view:nth-child(6) text {
+  color: #f68e43;
+}
+
+.details view.hot {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 24rpx;
+  border: 32rpx solid transparent;
+  border-top-color: #0391d7; 
+  border-right-color: #0391d7;
+  z-index: 0;
+}
+
+.hot text {
+  position: absolute;
+  top: -30rpx;
+  right: -30rpx;
+  color: white;
+  z-index: 30;
+}
+
+.more {
+  height: 100rpx;
+  font-size: 30rpx;
+  color: #0391d7;
+  line-height: 100rpx;
+  text-align: center;
+  background: #fff;
 }
