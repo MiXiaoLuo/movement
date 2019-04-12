@@ -1,3 +1,3 @@
 <!--pages/launch/launch.wxml-->
-<view id='btn' bindtap='toIndex'>跳过</view>
+<view id='btn' bindtap='toIndex'><text>{{number}}</text>跳过</view>
 <image src='../../images/preview.jpg'></image>

@@ -1,0 +1,12 @@
+<!--pages/m-settings/m-settings.wxml-->
+<view class='news-ml'>
+  <text>推送消息</text>
+  <switch checked bindchange="switchChange"/>
+</view>
+<view class='news-ml'>
+  <text>声音提醒</text>
+  <switch checked bindchange="switchChange"/>
+</view>
+<view class='exit-ml'>
+  <text>退出登录</text>
+</view>

@@ -252,9 +252,33 @@ page{
   width: 142rpx;
   height: 142rpx;
   display: block;
-  margin-left: 28rpx;
-  float: left;
 }
+.d-x-ml{
+  width: 142rpx;
+  height: 142rpx;
+  margin: 0 0 25rpx 28rpx;
+  float: left;
+  position: relative;
+}
+.d-xImages-ml{
+  width: 44rpx;
+  height: 44rpx;
+  position: absolute;
+  right: -15rpx;
+  top: -20rpx;
+  }
+  .d-submit-ml{
+    width: 100%;
+    height: 75rpx;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #0391d7;
+    font-size: 36rpx;
+    color: #fff;
+    line-height: 75rpx;
+    text-align: center;
+  }
 /*end 场馆评价*/
 /* begin 预定日历 */
 .d-rili-ml{

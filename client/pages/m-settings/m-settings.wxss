@@ -1,0 +1,31 @@
+/* pages/m-settings/m-settings.wxss */
+page{
+  background: #f0f0f0;
+}
+.news-ml{
+  width: 100%;
+  height: 104rpx;
+  background: #fff;
+  border: 2rpx #f0f0f0 solid;
+}
+.news-ml text{
+  color: #6f7179;
+  font-size: 32rpx;
+  line-height: 104rpx;
+  padding-left: 28rpx;
+}
+.news-ml switch{
+  float: right;
+  margin: 20rpx;
+}
+.exit-ml{
+  width: 100%;
+  height: 94rpx;
+  background: #0391d7;
+  color: #fff;
+  line-height: 94rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

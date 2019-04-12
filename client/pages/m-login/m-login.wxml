@@ -1,0 +1,15 @@
+<!--pages/m-login/m-login.wxml-->
+<view wx:if=''>
+  <view class='loginUser-ml'><text>账号 :</text><input></input></view>
+  <view class='loginPass-ml'><text>密码 :</text><input></input></view>
+  <text class='loginEnroll-ml' bindtap='enroll'>免费注册</text>
+  <button class='loginBtn-ml'>登录</button>
+</view>
+<view wx:if=''>
+  <view class='loginUser-ml'><text>账号 :</text><input></input></view>
+  <view class='loginPass-ml'><text>密码 :</text><input></input></view>
+  <view class='loginCona-ml'><text>确认密码 :</text><input></input></view>
+  <text class='loginEnroll-ml' bindtap='login'>已有号?请登录</text>
+  <button class='loginBtn-ml'>注册</button>
+</view>
+

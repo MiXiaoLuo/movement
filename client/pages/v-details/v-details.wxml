@@ -123,16 +123,21 @@
     <image src='../../images/v-d-pencil.png'></image>
     <text>场馆点评</text>
   </view>
-  <view class='d-review-ml' animation="{{animationData}}" wx:if='{{anima}}' catchtouchmove="true">
+  
+  <view class='d-review-ml' animation="{{animationData}}" wx:if='{{review}}' catchtouchmove="true">
     <view class='d-rili-down-ml'>
         发表评论
-        <image src='../../images/v-d-down.png' bindtap='riliDown'></image>
+        <image src='../../images/v-d-down.png' bindtap='evaDown'></image>
     </view>
     <textarea class='d-textarea-ml' maxlength='400'></textarea>
-    <view>
-      <image src='{{tempFilePaths}}' class='d-showInages-ml'></image>
+    <view wx:for='{{tempFilePaths}}'>
+      <view class='d-x-ml'>
+        <image src='../../images/v-d-x.png' class='d-xImages-ml' data-url='{{index}}' bindtap='xImages'></image>
+        <image src='{{item}}' class='d-showInages-ml' bindtap='previewImages' data-index='{{index}}'></image>
+      </view>
     </view>
     <view bindtap='images' class='d-addInages-ml'><image src='../../images/v-d-add.png'></image></view>
+    <view class='d-submit-ml'>提交</view>
   </view>
 </view>
 <!--end 场馆评价-->

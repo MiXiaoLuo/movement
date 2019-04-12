@@ -1,35 +1,18 @@
-// pages/launch/launch.js
-var guan = null;
-var ting = null;
-
+// pages/m-feedback/m-feedback.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    number:5
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var ti = this;
-    var index = 5;
-    ting = setInterval(function(){
-      index--;
-      ti.setData({
-        number: index
-      })
-      console.log(ti.data.number);
-    },1000)
-    guan = setTimeout(function () {
-      clearInterval(ting);
-      wx.switchTab({
-        url: '../index/index'
-      })
-    }, 5000)
+
   },
 
   /**
@@ -43,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
   },
 
   /**
@@ -79,12 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  toIndex: function () {
-    wx.switchTab({
-      url: '../index/index'
-    })
-    clearTimeout(guan);
-    clearInterval(ting);
   }
 })

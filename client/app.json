@@ -4,6 +4,13 @@
     "pages/venues/venues",
     "pages/v-details/v-details",
     "pages/activity/activity",
+    "pages/m-activities/m-activities",
+    "pages/m-venues/m-venues",
+    "pages/m-collection/m-collection",
+    "pages/m-news/m-news",
+    "pages/m-settings/m-settings",
+    "pages/m-feedback/m-feedback",
+    "pages/m-login/m-login",
     "pages/my/my",
     "pages/index/index"
 
