@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/activity/activity",
+    "pages/a-details/a-details",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0391d7",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#8c8c8c",
+    "selectedColor": "#0391d7",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home1.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动预定",
+        "iconPath": "images/activity.png",
+        "selectedIconPath": "images/activity1.png"
+      }
+    ]
+  }
+}
