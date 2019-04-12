@@ -1,2 +1,17 @@
 <!--pages/activity/activity.wxml-->
-<text>pages/activity/activity.wxml</text>
+<scroll-view class='scroll-box' scroll-x >
+  <view class='on'>全部</view>
+  <view>演出</view>
+  <view>展览</view>
+  <view>讲座</view>
+  <view>其他</view>
+</scroll-view>
+<view wx:for="{{details}}"  wx:key="index" class='details' bindtap='toDetails' id='{{index}}'>
+  <image src='{{item.img}}'></image>
+  <view>余票：{{item.residue}}</view>
+  <view>{{item.title}}</view>
+  <view>时间：<text>{{item.time}}</text></view>
+  <view>地址：<text>{{item.address}}</text></view>
+  <view>门票：<text>{{item.tickets}}起</text></view>
+  <view class='hot'><text>热</text></view>
+</view>
