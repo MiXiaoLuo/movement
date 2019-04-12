@@ -1,0 +1,28 @@
+/* pages/m-news/m-news.wxss */
+page{
+  background: #f0f0f0;
+}
+.content-ml{
+  width: 100%;
+  height: 180rpx;
+  background: #fff;
+  margin-top: 32rpx;
+}
+.content-ml text:first-child{
+  width: 722rpx;
+  height: 82rpx;
+  font-size: 20rpx;
+  color: #000;
+  display: block;
+  line-height: 82rpx;
+  padding-left: 28rpx;
+}
+.content-ml text:last-child{
+  width: 694rpx;
+  height: 98rpx;
+  font-size: 20rpx;
+  color: #6f7179;
+  display: block;
+  padding: 0 28rpx 0 28rpx;
+  line-height: 32rpx;
+}

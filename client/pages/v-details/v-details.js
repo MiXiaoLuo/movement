@@ -11,6 +11,7 @@ Page({
     _num: 1,
     animationData:{},
     anima:false,
+    review:false,
     year: 0,
     month: 0,
     date: ['日', '一', '二', '三', '四', '五', '六'],
@@ -19,7 +20,7 @@ Page({
     isTodayWeek: false,
     todayIndex: 0,
     shi:0,
-    tempFilePaths:''
+    tempFilePaths:[]
   },
   evaluation:function(e){
     this.setData({
@@ -29,17 +30,31 @@ Page({
   images:function(){
     var ti = this;
     wx.chooseImage({
-      count: 1,
+      count: 9,
       sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
       success(res) {
         ti.setData({
-          tempFilePaths:res.tempFilePaths
+          tempFilePaths: res.tempFilePaths
         })
-        console.log(res);
       }
     })
-    console.log(this.data.showImages)
+  },
+  xImages:function(e){
+    var url = e.currentTarget.dataset.url;
+    var images = this.data.tempFilePaths
+    images.splice(url,1);
+    this.setData({
+      tempFilePaths:images
+    })
+  },
+  previewImages:function(e){
+    var index = e.currentTarget.dataset.index;
+    var url = this.data.tempFilePaths;
+    wx.previewImage({
+      current: url[index],
+      urls: url
+    })
   },
 
   /**
@@ -193,13 +208,34 @@ Page({
   },
 
   animationData: function () {
+    this.setData({
+      anima: true
+    });
     Up(this);
   },
   riliDown:function(){
+    var that = this;
     Down(this);
+    setTimeout(function () {
+      that.setData({
+        anima: false
+      })
+    }, 1000)
   },
   evaUp:function(){
+    this.setData({
+      review: true
+    });
     Up(this);
+  },
+  evaDown:function(){
+    var that = this;
+    Down(this);
+    setTimeout(function () {
+      that.setData({
+        review: false
+      })
+    }, 1000)
   }
 
 
@@ -211,9 +247,6 @@ function Up(tmd){
     timingFunction: 'ease'
   });
   tmd.animation = animation;
-  tmd.setData({
-    anima: true
-  });
   var ti = tmd;
   setTimeout(function () {
     animation.translateY(-100 + '%').step()
@@ -236,9 +269,4 @@ function Down(tmd){
       animationData: animation.export()
     })
   }, 10)
-  setTimeout(function () {
-    that.setData({
-      anima: false
-    })
-  }, 1000)
 }

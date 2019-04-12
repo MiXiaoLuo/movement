@@ -5,7 +5,48 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    nav:['我的活动','我的场馆','我的收藏','我的消息','个人设置','意见反馈']
+  },
+  login:function(){
+    wx: wx.navigateTo({
+      url: '../m-login/m-login'
+    });
+  },
+  nav:function(e){
+    var number = e.currentTarget.dataset.index;
+    switch(number){
+      case 0:
+        wx: wx.navigateTo({
+          url: '../m-activities/m-activities'
+        });
+      break;
+      case 1:
+        wx: wx.navigateTo({
+          url: '../m-venues/m-venues'
+        });
+        break;
+        case 2:
+        wx: wx.navigateTo({
+          url: '../m-collection/m-collection'
+        });
+        break;
+      case 3:
+        wx: wx.navigateTo({
+          url: '../m-news/m-news'
+        });
+      break;
+      case 4:
+        wx: wx.navigateTo({
+          url: '../m-settings/m-settings'
+        });
+      break; 
+      case 5:
+        wx: wx.navigateTo({
+          url: '../m-feedback/m-feedback'
+        });
+      break;
+      
+    }
   },
 
   /**

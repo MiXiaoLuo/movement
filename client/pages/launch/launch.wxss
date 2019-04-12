@@ -8,13 +8,16 @@ image{
   position: fixed;
   top: 50rpx;
   right: 6%;
-  width: 100rpx;
-  height: 40rpx;
+  width: 120rpx;
+  height: 50rpx;
   font-size: 30rpx;
-  line-height: 40rpx;
+  line-height: 50rpx;
   color: #fff;
   text-align: center;
   border-radius: 40rpx; 
   background: rgba(0, 0,0,.3);
   z-index: 10;
+}
+#btn text{
+  padding-right: 5rpx;
 }
