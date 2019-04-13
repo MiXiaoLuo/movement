@@ -4,6 +4,7 @@
     "pages/venues/venues",
     "pages/v-details/v-details",
     "pages/activity/activity",
+    "pages/a-details/a-details",
     "pages/m-activities/m-activities",
     "pages/m-venues/m-venues",
     "pages/m-collection/m-collection",
