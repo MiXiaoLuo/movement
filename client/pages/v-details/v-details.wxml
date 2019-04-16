@@ -130,7 +130,7 @@
         <image src='../../images/v-d-down.png' bindtap='evaDown'></image>
     </view>
     <textarea class='d-textarea-ml' maxlength='400'></textarea>
-    <view wx:for='{{tempFilePaths}}'>
+    <view wx:for='{{tempFilePaths}}' wx:key='index'>
       <view class='d-x-ml'>
         <image src='../../images/v-d-x.png' class='d-xImages-ml' data-url='{{index}}' bindtap='xImages'></image>
         <image src='{{item}}' class='d-showInages-ml' bindtap='previewImages' data-index='{{index}}'></image>
