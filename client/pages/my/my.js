@@ -1,11 +1,13 @@
 // pages/my/my.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nav:['我的活动','我的场馆','我的收藏','我的消息','个人设置','意见反馈']
+    nav:['我的活动','我的场馆','我的收藏','我的消息','个人设置','意见反馈'],
+    login:''
   },
   login:function(){
     wx: wx.navigateTo({
@@ -53,7 +55,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
@@ -67,7 +69,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    if(app.users){
+      this.setData({
+        login: app.users
+      }) 
+    }else{
+      this.setData({
+        login: '登录 / 注册'
+      })
+    }
   },
 
   /**

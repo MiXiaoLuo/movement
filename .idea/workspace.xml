@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="437628cf-e3c3-42ee-9580-6ab24e589a71" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/client/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/m-login/m-login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/m-login/m-login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/m-login/m-login.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/m-login/m-login.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/m-login/m-login.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/m-login/m-login.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/my/my.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/my/my.wxml" afterDir="false" />
-    </list>
+    <list default="true" id="437628cf-e3c3-42ee-9580-6ab24e589a71" name="默认更改列表" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,7 +15,7 @@
     <session id="372782916">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="1" />
@@ -124,7 +118,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="285" />
     <option name="y" value="27" />
     <option name="width" value="1400" />
@@ -184,16 +178,15 @@
       <updated>1555059855409</updated>
       <workItem from="1555059861028" duration="6555000" />
       <workItem from="1555129437244" duration="7318000" />
-      <workItem from="1555140244648" duration="6714000" />
+      <workItem from="1555140244648" duration="7314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20587000" />
+    <option name="totallyTimeSpent" value="21187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="285" y="27" width="1400" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13509545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

@@ -1,4 +1,5 @@
 // pages/m-login/m-login.js
+var app = getApp();
 Page({
 
   /**
@@ -37,7 +38,8 @@ Page({
         },
         success(res) {
           ti.setData({
-            enrollCona:res.data.msg
+            enrollCona:res.data.msg,
+            list:1
           })
         }
       })
@@ -52,6 +54,7 @@ Page({
     this.setData({
       enrollPass: e.detail.value
     })
+
   },
   enrollCona:function(e){
     var pass = this.data.enrollPass;
@@ -82,11 +85,12 @@ Page({
           'content-type': 'application/json'
         },
         success(res) {
-          console.log(res)
+          // console.log(res.data.show.user)
           if(res.data.code === 2){
             wx.navigateBack({
               delta: 2
             })
+            app.users = res.data.show.user;
             return;
           }
           if(res.data.code == 3){

@@ -20,7 +20,8 @@ Page({
     isTodayWeek: false,
     todayIndex: 0,
     shi:0,
-    tempFilePaths:[]
+    tempFilePaths:[],
+    con:{}
   },
   evaluation:function(e){
     this.setData({
@@ -69,6 +70,10 @@ Page({
       year: year,
       month: month,
       isToday: '' + year + month + now.getDate()
+    })
+    var json = JSON.parse(options.con);
+    this.setData({
+      con:json
     })
   },
 

@@ -5,12 +5,13 @@ var json = {};
 router.use(function (req, res, next) {  //返回给前端信息
     json = {
         code:0,
-        msg:''
+        msg:'',
+        show:{}
     };
     next();
 });
 
-router.get('/enroll',function (req, res) {
+router.get('/enroll',function (req,res){
     var user = req.query.user;
     var pass = req.query.pass;
     User.findOne({
@@ -35,12 +36,11 @@ router.get('/enroll',function (req, res) {
 router.get('/login',function (req, res) {
     var user = req.query.user;
     var pass = req.query.pass;
-    console.log('数据'+user,pass);
     User.findOne({user:user,pass:pass}).then(function (info) {
-        console.log(info);
         if (info) {
             json.code = 2;
             json.msg = '登录成功!';
+            json.show = info;
             res.send(json);
             res.end();
         }
