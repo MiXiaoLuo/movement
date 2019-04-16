@@ -1,3 +1,19 @@
 <!--pages/a-details/a-details.wxml-->
-<image src='../../images/activity-0.jpg'></image>
-
+<image class='activity-img' src='{{json.img}}'></image>
+<view class='title'>{{json.title}}</view>
+<view class='details'>
+  <view>{{json.address}}</view>
+  <view>咨询：4006-228-228</view>
+  <view>活动日期：{{json.time}}</view>
+  <view>剩余日期：<text>1</text>天</view>
+  <view>余票：<text>{{json.residue}}</text>张</view>
+  <view class='tickets'>门票：<text>380</text></view>
+</view>
+<view class='act-details'>活动详情
+  <text>{{json.contents}}</text>
+</view>
+<view class='comments'>
+  <view>———— 欢迎添加更多评论 ————</view>
+  <view><image src='../../images/v-d-pencil.png'/>点评</view>
+</view>
+<view><image src='../../images/v-d-link.png'/>活动预定</view>

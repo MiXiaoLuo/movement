@@ -1,10 +1,11 @@
 {
   "pages":[
-    "pages/launch/launch",
-    "pages/venues/venues",
-    "pages/v-details/v-details",
     "pages/activity/activity",
     "pages/a-details/a-details",
+    "pages/launch/launch",
+    "pages/index/index",
+    "pages/venues/venues",
+    "pages/v-details/v-details",
     "pages/m-activities/m-activities",
     "pages/m-venues/m-venues",
     "pages/m-collection/m-collection",
@@ -12,8 +13,7 @@
     "pages/m-settings/m-settings",
     "pages/m-feedback/m-feedback",
     "pages/m-login/m-login",
-    "pages/my/my",
-    "pages/index/index"
+    "pages/my/my"
 
   ],
   "window": {

@@ -12,7 +12,8 @@ Page({
         time: '2019-5-11',
         address: '河南艺术中心',
         tickets: '￥100',
-        residue: '356'
+        residue: '356',
+        contents: '音乐会现场钢琴演奏家：石进他，40分钟创作出《夜的钢琴曲五》，却斩获近2亿收听量；他，原创专辑获得2011年“华语金曲奖年度独奏专辑”提名；他，80后理工男，却被冯小刚钦点为《非诚勿扰2》配乐；他，因为一场周杰伦演唱会，22岁才开始钢琴创作之路；他，就是石进，“一个小拇指在音乐圈”的独立音乐人。首首都是不同的心情，记录着一个又一个夜晚，欢乐的、忧伤的、难过的、当然也包括幸福的。是以治愈系为主。夜的钢琴曲中的每一首曲子都静谧舒缓，让彼此心灵诗意地栖息。在这里，每个人总会找到一首属于自己情感的乐曲。轻柔的钢琴，道出淡淡的思念，回味经典的同时，此次演奏会石进本人来到郑州，也会带来2017全新专辑《夜的钢琴曲IV》，与你娓娓道来这轻如云烟的思念。'
       },
       {
         img: '../../images/activity-1.jpg',
@@ -112,8 +113,9 @@ Page({
 
   },
   toDetails: function (e) {
+    var data = this.data.details[e.currentTarget.id];
     wx.navigateTo({
-      url: '../a-details/a-details?id=' + e.currentTarget.id
+      url: '../a-details/a-details?id=' + e.currentTarget.id + '&data=' + JSON.stringify(data)
     })
   }
 })
