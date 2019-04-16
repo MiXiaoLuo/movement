@@ -7,12 +7,25 @@ Page({
    */
   data: {
     nav:['我的活动','我的场馆','我的收藏','我的消息','个人设置','意见反馈'],
-    login:''
+    login:'',
+    img:'../../images/m-portrait.jpg'
   },
   login:function(){
-    wx: wx.navigateTo({
-      url: '../m-login/m-login'
-    });
+    var ti = this;
+    wx.getUserInfo({
+      success:function(res){
+        ti.setData({
+          login:res.userInfo.nickName,
+          img:res.userInfo.avatarUrl
+        })
+        app.users = res.userInfo.nickName;
+      },
+      fail:function(){
+        wx: wx.navigateTo({
+          url: '../m-login/m-login'
+        });
+      }
+    })
   },
   nav:function(e){
     var number = e.currentTarget.dataset.index;
@@ -55,7 +68,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**

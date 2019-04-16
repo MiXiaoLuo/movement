@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/launch/launch",
     "pages/activity/activity",
     "pages/a-details/a-details",
-    "pages/launch/launch",
     "pages/index/index",
     "pages/venues/venues",
     "pages/v-details/v-details",

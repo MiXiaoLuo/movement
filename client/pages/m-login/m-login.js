@@ -85,7 +85,6 @@ Page({
           'content-type': 'application/json'
         },
         success(res) {
-          // console.log(res.data.show.user)
           if(res.data.code === 2){
             wx.navigateBack({
               delta: 2
