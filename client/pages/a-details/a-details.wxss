@@ -46,17 +46,112 @@ page{
   background: white;
 }
 
-.comments view image {
-  display: block;
-  width: 60rpx;
-  height: 60rpx;
-  background: red
-}
-
-.comments view:first-child {
+.comments .welcomeAdd {
   color: #b4b9c1;
   font-size: 24rpx;
   line-height: 100rpx;
   text-align: center;
 }
 
+.review {
+  margin: 10rpx;
+  color: #808080;
+  border: 1px solid #f0f0f0;
+}
+
+.userinfo {
+  height: 40rpx;
+  padding: 20rpx;
+}
+
+.userinfo image {
+  display: block;
+  float: left;
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.userinfo text {
+  display: block;
+  float: left;
+  font-size: 32rpx;
+  line-height: 64rpx;
+}
+
+.userinfo text:last-child {
+  font-size: 24rpx;
+  float: right;
+}
+
+.review-contents {
+  padding: 20rpx;
+}
+
+.review-contents image {
+  display: block;
+  float: left;
+  width: 210rpx;
+  height: 280rpx;
+  margin-left: 16rpx;
+}
+
+.review-contents text {
+  display: block;
+  clear: both;
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  line-height: 64rpx;
+}
+
+.review-box {
+  height: 120rpx;
+  padding-top: 40rpx;
+}
+
+.review-btn {
+  position: relative;
+  width: 280rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  border: 1px solid #333;
+  border-radius: 30rpx;
+  color: #333;
+  font-size: 36rpx;
+  line-height: 60rpx;
+}
+
+.review-btn image {
+  position: absolute;
+  top: 6rpx;
+  left: 72rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.review-btn text {
+  position: absolute;
+  left: 130rpx;
+}
+
+.reservation {
+  position: relative;
+  height: 100rpx;
+  background: #0391d7;
+  color: white;
+  line-height: 100rpx;
+}
+
+.reservation image {
+  position: absolute;
+  display: block;
+  top: 28rpx;
+  left: 36%;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.reservation text {
+  position: absolute;
+  font-size: 38rpx;
+  left: 44%;
+}

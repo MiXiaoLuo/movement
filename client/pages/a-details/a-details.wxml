@@ -13,7 +13,28 @@
   <text>{{json.contents}}</text>
 </view>
 <view class='comments'>
-  <view>———— 欢迎添加更多评论 ————</view>
-  <view><image src='../../images/v-d-pencil.png'/>点评</view>
+  <view class='welcomeAdd'>———— 欢迎添加更多评论 ————</view>
+  <view class='review'>
+    <view class='userinfo'>
+      <image src='../../images/my.png'></image>
+      <text>迷人的小乐乐</text>
+      <text>2019-4-15</text>
+    </view>
+    <view class='review-contents'>
+      <image src='{{json.img}}'></image>
+      <image src='{{json.img}}'></image>
+      <image src='{{json.img}}'></image>
+      <text>很不错</text>
+    </view>
+  </view>
+  <view class='review-box'>
+    <view class='review-btn'>
+      <image src='../../images/pencil.png'/>
+      <text>点评</text>
+    </view>
+  </view>
 </view>
-<view><image src='../../images/v-d-link.png'/>活动预定</view>
+<view class='reservation'>
+  <image src='../../images/v-d-link.png'></image>
+  <text>活动预订</text>
+</view>
