@@ -206,7 +206,6 @@ Page({
     this.dateInit(year, month);
   },
   lookHuoDong:function(e){
-    console.log(e);
     this.setData({
       shi: e.currentTarget.dataset.datenum
     })

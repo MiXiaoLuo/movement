@@ -1,4 +1,4 @@
-<!--pages/a-details/a-details.wxml-->
+<!-- pages/a-details/a-details.wxml-->
 <image class='activity-img' src='{{json.img}}'></image>
 <view class='title'>{{json.title}}</view>
 <view class='details'>
@@ -28,13 +28,85 @@
     </view>
   </view>
   <view class='review-box'>
-    <view class='review-btn'>
+    <view class='review-btn' bindtap='evaUp'>
       <image src='../../images/pencil.png'/>
       <text>点评</text>
     </view>
   </view>
 </view>
-<view class='reservation'>
+<view class='reservation' bindtap='animationData'>
   <image src='../../images/v-d-link.png'></image>
   <text>活动预订</text>
 </view>
+<!--begin 活动预定-->
+  <view class='d-rili-ml' animation="{{animationData}}" wx:if='{{anima}}' catchtouchmove="true">
+    <!--begin 日历-->
+    <view class='d-rili-down-ml'>
+      日期预定
+      <image src='../../images/v-d-down.png' bindtap='riliDown'></image>
+    </view>
+    <!-- 日历年月 -->
+    <view class='d-nyr-ml'>
+      <view class='icon' bindtap='lastMonth'>
+        <text>♂</text>
+      </view>
+      <view>{{year}} 年 {{month}} 月</view>
+      <view class='icon' bindtap='nextMonth'>
+        <text>♀</text>
+      </view>
+    </view>
+    <!-- 日历主体 -->
+    <view class='calendar'>
+      <view class='header'>
+        <view wx:for='{{date}}' wx:key='' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}
+          <view></view>
+        </view>
+      </view>
+      <view class='date-box'>
+        <block wx:for='{{dateArr}}' wx:key=''>
+          <view class='{{isToday == item.isToday ? "nowDay":""}} shi'>
+            <view class='date-head {{shi == item.dateNum ? "date-head-ml":""}}' bindtap='lookHuoDong' data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}'>
+              <view>{{item.dateNum}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <!--end 日历-->
+    <view class="d-rili-time-ml">
+      <text>时间预定</text>
+    </view>
+    <scroll-view class='d-rili-timeTo-ml' scroll-x scroll-with-animation='true'>
+      <text>8：00 至 10：00</text>
+      <text>10：00 至 12：00</text>
+      <text>13：00 至 15：00</text>
+      <text>15：00 至 17：00</text>
+      <text>18：00 至 20：00</text>
+    </scroll-view>
+    <view class='d-rili-time-ml'>
+      <text>手机号</text>
+      <input text='number' value='' placeholder='请输入手机号'></input>
+    </view>
+    <view class='d-to-comments-ml' style='position: absolute;bottom:0;'>
+      <image src='../../images/v-d-order.png'></image>
+      <text>提交订单</text>
+    </view>
+  </view>
+<!--end 活动预定-->
+<!--bengin 活动评价-->
+<view class='d-review-ml' animation="{{animationData}}" wx:if='{{review}}' catchtouchmove="true">
+    <view class='d-rili-down-ml'>
+        发表评论
+        <image src='../../images/v-d-down.png' bindtap='evaDown'></image>
+    </view>
+    <textarea class='d-textarea-ml' maxlength='400'></textarea>
+    <view wx:for='{{tempFilePaths}}' wx:key='index'>
+      <view class='d-x-ml'>
+        <image src='../../images/v-d-x.png' class='d-xImages-ml' data-url='{{index}}' bindtap='xImages'></image>
+        <image src='{{item}}' class='d-showInages-ml' bindtap='previewImages' data-index='{{index}}'></image>
+      </view>
+    </view>
+    <view bindtap='images' class='d-addInages-ml'><image src='../../images/v-d-add.png'></image></view>
+    <view class='d-submit-ml'>提交</view>
+  </view>
+  <!--end 活动评价-->
