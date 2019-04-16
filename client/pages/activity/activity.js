@@ -46,7 +46,14 @@ Page({
         tickets: '￥80',
         residue: '318'
       }
-    ]
+    ],
+    nav: ['全部', '演出', '展览', '讲座','其他'],
+    _index:0
+  },
+  nav:function(e){
+    this.setData({
+      _index:e.currentTarget.dataset.index
+    })
   },
 
   /**

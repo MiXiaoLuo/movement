@@ -1,2 +1,8 @@
 <!--pages/m-venues/m-venues.wxml-->
-<text>pages/m-venues/m-venues.wxml</text>
+<view class='con-ml'>
+  <image src='../../images/fitness.jpg'></image>
+  <view class='text-ml'>
+    <text>羽毛球馆</text>
+    <text>地址 : 上海市 奉贤区 江海街道 江海新街2号</text>
+  </view>
+</view>

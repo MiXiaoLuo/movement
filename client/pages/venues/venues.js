@@ -5,7 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    nav: ['全部', '图书馆', '文化馆', '美术馆', '台球馆', '羽毛球馆','乒乓球馆'],
+    _index:0,
+    con:[{
+      img:'../../images/fitness.jpg',
+      title:'盘城文体活动中心',
+      place:'地点 : 南京市 浦口区 盘城街道 盘城新街68号'
+    },{
+        img: '../../images/fitness1.jpg',
+        title: '顶山街道文体中心排练厅',
+        place: '地点 : 南京市 浦口区 顶山街道 吉庆路10号'
+    }]
+  },
+  nav:function(e){
+    this.setData({
+      _index:e.currentTarget.dataset.index
+    })
   },
 
   /**
@@ -14,9 +29,10 @@ Page({
   onLoad: function (options) {
 
   },
-  details:function(){
+  details:function(e){
+    var show = this.data.con[e.currentTarget.dataset.or];
     wx:wx.navigateTo({
-      url: '../v-details/v-details'
+      url: '../v-details/v-details?con=' + JSON.stringify(show)
     })
   },
 
