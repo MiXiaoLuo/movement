@@ -1,2 +1,9 @@
 <!--pages/m-collection/m-collection.wxml-->
-<text>pages/m-collection/m-collection.wxml</text>
+<view class='con-ml'>
+  <image src='../../images/fitness1.jpg'></image>
+  <view class='text-ml'>
+    <text>乒乓球馆</text>
+    <text>地址 : 北京市 解放区 人民街道 人民街32号</text>
+    <image src='../../images/v-d-heart.png'></image>
+  </view>
+</view>

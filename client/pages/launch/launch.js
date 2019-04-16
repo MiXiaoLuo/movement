@@ -22,7 +22,6 @@ Page({
       ti.setData({
         number: index
       })
-      console.log(ti.data.number);
     },1000)
     guan = setTimeout(function () {
       clearInterval(ting);

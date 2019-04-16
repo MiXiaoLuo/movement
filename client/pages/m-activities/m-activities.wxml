@@ -1,2 +1,6 @@
 <!--pages/m-activities/m-activities.wxml-->
-<text>pages/m-activities/m-activities.wxml</text>
+<view class='con-ml'>
+  <text>运动馆</text>
+  <text>地址 : 南京市 浦口区 盘城街道 盘城新街68号</text>
+  <text>2019/3/4</text>
+</view>

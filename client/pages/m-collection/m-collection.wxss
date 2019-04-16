@@ -1,1 +1,38 @@
 /* pages/m-collection/m-collection.wxss */
+page{
+  background: #f0f0f0;
+}
+.con-ml{
+  width: 100%;
+  height: 240rpx;
+  background: #fff;
+  font-size: 24rpx;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.con-ml image:first-child{
+  width: 250rpx;
+  height: 150rpx;
+  display: block;
+  margin: 45rpx 20rpx;
+  float: left;
+}
+.text-ml{
+  width: 460rpx;
+  height: 215rpx;
+  float: left;
+  overflow: hidden;
+  padding-top: 25rpx;
+  position: relative;
+}
+.text-ml text{
+  display: block;
+  margin: 30rpx 40rpx 0 0;
+}
+.text-ml image{
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  right: 30rpx;
+  bottom: 20rpx;
+}

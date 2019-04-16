@@ -1,15 +1,17 @@
 <!--pages/m-login/m-login.wxml-->
-<view wx:if=''>
-  <view class='loginUser-ml'><text>账号 :</text><input></input></view>
-  <view class='loginPass-ml'><text>密码 :</text><input></input></view>
-  <text class='loginEnroll-ml' bindtap='enroll'>免费注册</text>
-  <button class='loginBtn-ml'>登录</button>
+<view wx:if='{{list == 1}}'>
+  <text class='prompt-ml' style='top:31%;'>{{login}}</text>
+  <view class='loginUser-ml'><text>账号 :</text><input bindinput='loginUser'></input ></view>
+  <view class='loginPass-ml'><text>密码 :</text><input password='true' bindinput='loginPass'></input></view>
+  <text class='loginEnroll-ml' bindtap='loginEnroll' data-list='2'>免费注册</text>
+  <button class='loginBtn-ml' bindtap='login'>登录</button>
 </view>
-<view wx:if=''>
-  <view class='loginUser-ml'><text>账号 :</text><input></input></view>
-  <view class='loginPass-ml'><text>密码 :</text><input></input></view>
-  <view class='loginCona-ml'><text>确认密码 :</text><input></input></view>
-  <text class='loginEnroll-ml' bindtap='login'>已有号?请登录</text>
-  <button class='loginBtn-ml'>注册</button>
+<view wx:if='{{list == 2}}'>
+  <text class='prompt-ml'>{{enrollCona}}</text>
+  <view class='loginUser-ml enrollUser-ml'><text>账号 :</text><input bindinput='enrollUser'></input></view>
+  <view class='loginPass-ml enrollPass-ml'><text>密码 :</text><input password='true' bindinput='enrollPass'></input></view>
+  <view class='loginPass-ml rnrollCona-ml'><text>确认密码 :</text><input password='true' bindinput='enrollCona'></input></view>
+  <text class='loginEnroll-ml' bindtap='loginEnroll' data-list='1'>已有号?请登录</text>
+  <button class='loginBtn-ml' bindtap='enroll'>注册</button>
 </view>
 

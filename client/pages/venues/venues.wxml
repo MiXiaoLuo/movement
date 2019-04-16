@@ -4,25 +4,13 @@
   scroll-x
  scroll-with-animation='true'
  >
-  <text class="v-mainbav-ml">全部</text>
-  <text class="v-mainbav-ml">图书馆</text>
-  <text class="v-mainbav-ml">文化馆</text>
-  <text class="v-mainbav-ml">美术馆</text>
-  <text class="v-mainbav-ml">台球馆</text>
-  <text class="v-mainbav-ml">羽毛球馆</text>
-  <text class="v-mainbav-ml">乒乓球馆</text>
+  <text class="{{_index == index ? 'on-ml' : ''}} v-mainbav-ml" wx:for='{{nav}}' wx:key='index' data-index='{{index}}' bindtap='nav'>{{item}}</text>
 </scroll-view>
 <view style='margin-top:94rpx;'>
-  <view class='v-content-ml' bindtap='details'>
-    <image src='../../images/fitness.jpg' lazy-load='true'></image>
-    <text>盘城文体活动中心</text>
+  <view class='v-content-ml' bindtap='details' wx:for='{{con}}' wx:key='index' data-or='{{index}}'>
+    <image src='{{item.img}}' lazy-load='true'></image>
+    <text>{{item.title}}</text>
     <view></view>
-    <text>地点 : 南京市 浦口区 盘城街道 盘城新街68号</text>
-  </view>
-  <view class='v-content-ml'>
-    <image src='../../images/fitness1.jpg' lazy-load='true'></image>
-    <text>顶山街道文体中心排练厅</text>
-    <view></view>
-    <text>地点 : 南京市 浦口区 顶山街道 吉庆路10号</text>
-  </view>
+    <text>{{item.place}}</text>
+  </view> 
 </view>
