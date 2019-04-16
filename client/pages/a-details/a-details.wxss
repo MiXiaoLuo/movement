@@ -1,1 +1,62 @@
 /* pages/a-details/a-details.wxss */
+page{
+  background: #f0f0f0;
+}
+
+.activity-img {
+  display: block;
+  width: 100vw;
+  height: 70vh;
+}
+.title,
+.act-details {
+  color: #333;
+  background: white;
+  margin-top: 10rpx;
+  padding: 0 30rpx;
+  font-size: 36rpx;
+  line-height: 99rpx;
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: bold;
+}
+
+.details view {
+  color: #808080;
+  background: white;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  line-height: 85rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.details view text {
+  color: #f68e43;
+}
+
+.act-details text {
+  color: #808080;
+  display: block;
+  font-size: 26rpx;
+  line-height: 50rpx;
+  font-weight: normal;
+}
+
+.comments {
+  margin-top: 20rpx;
+  background: white;
+}
+
+.comments view image {
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  background: red
+}
+
+.comments view:first-child {
+  color: #b4b9c1;
+  font-size: 24rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+

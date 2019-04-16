@@ -1,9 +1,11 @@
 {
   "pages":[
+    "pages/activity/activity",
+    "pages/a-details/a-details",
     "pages/launch/launch",
+    "pages/index/index",
     "pages/venues/venues",
     "pages/v-details/v-details",
-    "pages/activity/activity",
     "pages/m-activities/m-activities",
     "pages/m-venues/m-venues",
     "pages/m-collection/m-collection",
@@ -11,8 +13,7 @@
     "pages/m-settings/m-settings",
     "pages/m-feedback/m-feedback",
     "pages/m-login/m-login",
-    "pages/my/my",
-    "pages/index/index"
+    "pages/my/my"
 
   ],
   "window": {
@@ -23,7 +24,7 @@
   },
   "tabBar": {
     "color": "#8c8c8c",
-    "selectedColor": "0391d7",
+    "selectedColor": "#0391d7",
     "backgroundColor": "#fff",
     "borderStyle": "black",
     "position": "bottom",
