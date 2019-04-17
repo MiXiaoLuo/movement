@@ -87,7 +87,9 @@ Page({
   
     if (options.on){
       var on = JSON.parse(options.on);
-      console.log(on)
+      this.setData({
+        con: on
+      })
     }
   },
 

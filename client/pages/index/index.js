@@ -57,7 +57,6 @@ Page({
   },
   con:function(e){
     var data = this.data.details[e.currentTarget.dataset.index];
-    console.log(data)
     wx.navigateTo({
       url: '../v-details/v-details?show=' + JSON.stringify(data)
     })
@@ -116,10 +115,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    
+  },
   cnt: function (e) {
     var data = this.data.details[e.currentTarget.dataset.on];
-    // console.log(data);
     wx.navigateTo({
       url: '../v-details/v-details?on=' + JSON.stringify(data),
     })
