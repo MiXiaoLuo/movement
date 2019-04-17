@@ -71,10 +71,19 @@ Page({
       month: month,
       isToday: '' + year + month + now.getDate()
     })
-    var json = JSON.parse(options.con);
-    this.setData({
-      con:json
-    })
+    if (options.con){
+      var json = JSON.parse(options.con);
+      this.setData({
+        con: json
+      })
+    }
+    if (options.show){
+      var show = JSON.parse(options.show);
+      this.setData({
+        con: show
+      })
+    }
+    
   },
 
   /**

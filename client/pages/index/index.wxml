@@ -14,7 +14,7 @@
 </swiper-item>
 </swiper>
 <view class='line'><text>——</text>为您推荐<text>——</text></view>
-<view wx:for="{{details}}"  wx:key="index" class='details'>
+<view wx:for="{{details}}"  wx:key="index" class='details' bindtap='con' data-index='{{index}}'>
   <image src='{{item.img}}'></image>
   <view>余票：{{item.residue}}</view>
   <view>{{item.title}}</view>

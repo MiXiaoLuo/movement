@@ -55,6 +55,13 @@ Page({
         }
       ]
   },
+  con:function(e){
+    var data = this.data.details[e.currentTarget.dataset.index];
+    console.log(data)
+    wx.navigateTo({
+      url: '../v-details/v-details?show=' + JSON.stringify(data)
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
