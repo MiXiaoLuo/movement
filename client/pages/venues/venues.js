@@ -10,11 +10,11 @@ Page({
     con:[{
       img:'../../images/fitness.jpg',
       title:'盘城文体活动中心',
-      place:'地点 : 南京市 浦口区 盘城街道 盘城新街68号'
+      address:'南京市 浦口区 盘城街道 盘城新街68号'
     },{
         img: '../../images/fitness1.jpg',
         title: '顶山街道文体中心排练厅',
-        place: '地点 : 南京市 浦口区 顶山街道 吉庆路10号'
+        address: '南京市 浦口区 顶山街道 吉庆路10号'
     }]
   },
   nav:function(e){

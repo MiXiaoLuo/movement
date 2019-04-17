@@ -16,7 +16,7 @@
     <view>{{con.title}}</view>
     <text>咨 询 : 025-58467511</text>
     <text>备 注 : 周一 09:00-16:30,各俱乐部开发模式...</text>
-    <text>{{con.place}}</text>
+    <text>地 址 : {{con.address}}</text>
     <text>参与方式 : 免费</text>
   </view>
   <view class='d-details-con-ml'>
