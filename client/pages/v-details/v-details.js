@@ -21,7 +21,8 @@ Page({
     todayIndex: 0,
     shi:0,
     tempFilePaths:[],
-    con:{}
+    con:{},
+    json: {}
   },
   evaluation:function(e){
     this.setData({
@@ -83,7 +84,11 @@ Page({
         con: show
       })
     }
-    
+  
+    if (options.on){
+      var on = JSON.parse(options.on);
+      console.log(on)
+    }
   },
 
   /**

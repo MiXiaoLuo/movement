@@ -117,5 +117,11 @@ Page({
    */
   onShareAppMessage: function () {
     
+  cnt: function (e) {
+    var data = this.data.details[e.currentTarget.dataset.on];
+    // console.log(data);
+    wx.navigateTo({
+      url: '../v-details/v-details?on=' + JSON.stringify(data),
+    })
   }
 })
