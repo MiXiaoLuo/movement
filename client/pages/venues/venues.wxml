@@ -11,6 +11,6 @@
     <image src='{{item.img}}' lazy-load='true'></image>
     <text>{{item.title}}</text>
     <view></view>
-    <text>{{item.place}}</text>
+    <text>地 址 : {{item.address}}</text>
   </view> 
 </view>
