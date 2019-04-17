@@ -8,8 +8,9 @@
   circular="true"
   interval="2200"
   duration="1000"
+  current='0'
 >
-<swiper-item wx:for="{{imgUrls}}" wx:key="index">
+<swiper-item wx:for="{{imgUrls}}" wx:key="index" bindtap='cnt' data-on='{{index}}'>
 <image src='{{item}}'/>
 </swiper-item>
 </swiper>
